@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form action="" method="POST" id="form" onsubmit="return false">
+        <label for="email">Mail</label>
+        <input type="email" name="" id="email" placeholder=''>
+        <small class="aviso__email" id="aviso__email__error">No es un mail</small>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject">
+        <small class="aviso__subject" id="aviso__subject__error">Campo obligatorio</small>
+
+        <label for="message">Message</label>
+        <textarea name="" id="message" cols="20" rows="3"></textarea>
+        <small class="aviso__message" id="aviso__message__error">Campo obligatorio</small>
+
+        <button type="submit" id="button">Send</button>
+    </form>
+    <div class="modal">
+        <img src="img/close__modal.svg" alt="" id="icon__close">
+        <img src="img/ok-circle 1.svg" alt="icon ok" srcset="" id="icon__ok">
+        <h2 id="title__form">Form submited</h2>
+        <p id="form__paragraph">Form was submited successfully </p>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
